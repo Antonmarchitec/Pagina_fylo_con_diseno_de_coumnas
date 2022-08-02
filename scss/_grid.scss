@@ -1,0 +1,59 @@
+/*
+GRID_CONTAINER
+GRID_HEADER
+GRID_SECTION_ONE
+GIRD_SECTION_TWO
+GRID_SECTION_THREE
+GRID_FOOTER
+*/
+
+@import "colorFont";
+
+
+.GRID_CONTAINER{
+    width: 100%;
+    max-width: 1440px;
+    padding: 20px 0px;
+    margin: auto;
+    background: brown;
+    display: grid;
+    //gap: 1em;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "GRID_HEADER          GRID_HEADER"
+    "GRID_SECTION_ONE     GRID_SECTION_ONE"
+    "GIRD_SECTION_TWO     GIRD_SECTION_TWO"
+    "GRID_SECTION_THREE   GRID_SECTION_THREE"
+    "GRID_FOOTER          GRID_FOOTER";
+
+    .GRID_HEADER{
+        padding: 10px 0px;
+        background: rgb(206, 107, 107);
+        grid-area: GRID_HEADER;
+    }
+
+    .GRID_SECTION_ONE{
+        padding: 10px 0px;
+        background: rgb(206, 107, 107);
+        grid-area: GRID_SECTION_ONE;
+    }
+
+    .GIRD_SECTION_TWO{
+        padding: 10px 0px;
+        background: rgb(206, 107, 107);
+        grid-area: GIRD_SECTION_TWO;
+    }
+
+    .GRID_SECTION_THREE{
+        padding: 10px 0px;
+        background: rgb(206, 107, 107);
+        grid-area: GRID_SECTION_THREE;
+    }
+
+    .GRID_FOOTER{
+        padding: 10px 0px;
+        background: rgb(206, 107, 107);
+        grid-area: GRID_FOOTER;
+    }
+}

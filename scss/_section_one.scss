@@ -1,0 +1,146 @@
+@import "colorFont";
+
+/*
+container_sectionOne
+container_sectionOne_blockleft
+container_sectionOne_title
+container_sectionOne_parrafo
+container_sectionOne_form
+input
+btn
+
+container_sectionOne_blockRight
+*/
+
+.container_sectionOne{
+    width: 100%;
+    padding: 100px 50px;
+    background: $Light_Grayish_Blue;
+    display: flex;
+    flex-direction: row;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .container_sectionOne_blockleft{
+        width: 500px;
+        padding: 10px 0px;
+        background: $Light_Grayish_Blue;
+        .container_sectionOne_title{
+            color: $Very_Dark_Blue;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        .container_sectionOne_parrafo{
+            margin-top: 20px;
+            font-weight: 400;
+            color: $Very_Dark_Blue;
+        }
+
+        .container_sectionOne_form{
+            margin-top: 20px;
+            width: 400px;
+            display: flex;
+            .input{
+                width: 600px;
+                padding: 10px;
+                border: none;
+                border: 2px solid $Light_Gray;
+            }
+            .btn{
+                width: 300px;
+                margin-left: 10px;
+                border: none;
+                background: $Bright_Blue;
+                color: $Light_Grayish_Blue;
+                transition: 0.5s all;
+            }
+            .btn:hover{
+                background: hsl(224, 89%, 65%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .container_sectionOne_blockRight{
+        width:600px;
+        height: 400px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/************************(min-width:320px) and (max-width:423px)********************************************/
+@media (min-width:320px) and (max-width:423px){
+    .container_sectionOne{
+        /****/
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 10px;
+
+        .container_sectionOne_blockleft{
+          
+            /*****/
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            .container_sectionOne_title{
+                color: $Very_Dark_Blue;
+                font-weight: 700;
+                font-size: 30px;
+            }
+            .container_sectionOne_parrafo{
+                
+
+                /**/
+                width: 90%;
+                margin: 20px auto;
+            }
+    
+            .container_sectionOne_form{
+                margin-top: 20px;
+                padding: 10px 0px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+               
+               
+                .input{
+                    /**/
+                    width: 100%;
+                    padding: 15px;
+
+
+                }
+                .btn{
+                   
+
+                    /**/
+                    width: 100%;
+                    padding: 15px 0px;
+                    margin:10px 0px;
+
+                }
+            }
+        }
+    
+        .container_sectionOne_blockRight{
+            width:100%;
+            height: 350px;
+        }
+    
+        
+    }
+}
