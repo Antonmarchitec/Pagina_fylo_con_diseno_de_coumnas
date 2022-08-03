@@ -1,0 +1,110 @@
+@import "colorFont";
+
+
+
+/*
+container_sectionThree
+container_sectionThree_blockLeft
+    container_sectionThree_blockLeft_title
+    container_sectionThree_blockLeft_parrafo
+container_sectionThree_blockRight
+    inputTree
+    btnStarted
+*/
+
+.container_sectionThree{
+    width: 100%;
+    padding: 100px 50px;
+    background-color: $Desaturated_Blue;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    .container_sectionThree_blockLeft{
+        width: 500px;
+        padding: 10px 0px;
+        .container_sectionThree_blockLeft_title{
+            font-size: $Font_titles;
+            color: $Light_Grayish_Blue;
+            font-weight: 700;
+        }
+        .container_sectionThree_blockLeft_parrafo{
+            margin-top: 20px;
+            color: $Light_Grayish_Blue;
+            font-weight: 400;
+        }
+    }
+
+
+    .container_sectionThree_blockRight{
+        width: 500px;
+        padding: 10px 0px;
+        .inputTree{
+            width: 100%;
+            padding: 10px;
+            border: none;
+        }
+        .btnStarted{
+            margin-top: 10px;
+            width: 50%;
+            padding: 10px 0px;
+            border: none;
+            background: $Bright_Blue;
+            color: $Light_Grayish_Blue;
+            transition: 0.5s all;
+        }
+        .btnStarted:hover{
+            background: $Bright_Blue_claro;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+/**************(min-width:320px) and (max-width:423px)****************************************/
+@media (min-width:320px) and (max-width:423px){
+    .container_sectionThree{
+        /**/
+        width: 100%;
+        padding: 100px 10px;
+        background-color: $Desaturated_Blue;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        .container_sectionThree_blockLeft{
+            /**/
+            width: 100%;
+           
+        }
+    
+    
+        .container_sectionThree_blockRight{
+
+            /**/
+            width: 100%;
+            .inputTree{
+                /**/
+                width: 80%;
+                margin: auto;
+                padding: 10px;
+                border: none;
+            }
+            .btnStarted{
+            
+                /**/
+                width: 80%;
+
+            }
+            .btnStarted:hover{
+                background: $Bright_Blue_claro;
+                cursor: pointer;
+            }
+        }
+    }
+}

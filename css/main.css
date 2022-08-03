@@ -410,5 +410,97 @@ container_sectionTwo
     background: hsl(240deg, 73%, 97%);
   }
 }
+/*
+container_sectionThree
+container_sectionThree_blockLeft
+    container_sectionThree_blockLeft_title
+    container_sectionThree_blockLeft_parrafo
+container_sectionThree_blockRight
+    inputTree
+    btnStarted
+*/
+.container_sectionThree {
+  width: 100%;
+  padding: 100px 50px;
+  background-color: hsl(238deg, 22%, 44%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container_sectionThree .container_sectionThree_blockLeft {
+  width: 500px;
+  padding: 10px 0px;
+}
+.container_sectionThree .container_sectionThree_blockLeft .container_sectionThree_blockLeft_title {
+  font-size: 30px;
+  color: hsl(240deg, 75%, 98%);
+  font-weight: 700;
+}
+.container_sectionThree .container_sectionThree_blockLeft .container_sectionThree_blockLeft_parrafo {
+  margin-top: 20px;
+  color: hsl(240deg, 75%, 98%);
+  font-weight: 400;
+}
+.container_sectionThree .container_sectionThree_blockRight {
+  width: 500px;
+  padding: 10px 0px;
+}
+.container_sectionThree .container_sectionThree_blockRight .inputTree {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+.container_sectionThree .container_sectionThree_blockRight .btnStarted {
+  margin-top: 10px;
+  width: 50%;
+  padding: 10px 0px;
+  border: none;
+  background: hsl(224deg, 93%, 58%);
+  color: hsl(240deg, 75%, 98%);
+  transition: 0.5s all;
+}
+.container_sectionThree .container_sectionThree_blockRight .btnStarted:hover {
+  background: hsl(224deg, 97%, 76%);
+  cursor: pointer;
+}
+
+/**************(min-width:320px) and (max-width:423px)****************************************/
+@media (min-width: 320px) and (max-width: 423px) {
+  .container_sectionThree {
+    /**/
+    width: 100%;
+    padding: 100px 10px;
+    background-color: hsl(238deg, 22%, 44%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .container_sectionThree .container_sectionThree_blockLeft {
+    /**/
+    width: 100%;
+  }
+  .container_sectionThree .container_sectionThree_blockRight {
+    /**/
+    width: 100%;
+  }
+  .container_sectionThree .container_sectionThree_blockRight .inputTree {
+    /**/
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: none;
+  }
+  .container_sectionThree .container_sectionThree_blockRight .btnStarted {
+    /**/
+    width: 80%;
+  }
+  .container_sectionThree .container_sectionThree_blockRight .btnStarted:hover {
+    background: hsl(224deg, 97%, 76%);
+    cursor: pointer;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
