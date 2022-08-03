@@ -1,0 +1,265 @@
+@import "colorFont";
+
+/*
+container_footer
+container_footer_blockLeft
+    container_footer_blockLeft_logo
+    container_footer_blockLeft_phone
+    container_footer_blockLeft_phone_blockPhone
+    container_footer_blockLeft_phone_blockText
+    container_footer_blockLeft_phone
+    container_footer_blockLeft_phone_blockPhone
+    container_footer_blockLeft_phone_blockText
+
+
+container_footer_blockCenter
+    container_footer_blockCenter_blockEnlaces
+    container_footer_blockCenter_blockEnlaces_ul
+    container_footer_blockCenter_blockEnlaces_ul_li
+        footer_li
+
+
+container_footer_blockRight
+    container_footer_blockRight_blockRedes
+        container_footer_blockRight_blockRedes_box
+        iconRedes
+*/
+
+.container_footer{
+    width: 100%;
+    padding: 100px 50px;
+    background: $Very_Dark_Blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    //BLOCK IZQUIERDA
+    .container_footer_blockLeft{
+        width: 280px;
+        padding: 10px 0px;
+        .container_footer_blockLeft_logo{
+            width: 140px;
+            height: 40px;
+        }
+
+        .container_footer_blockLeft_phone{
+            margin-top: 15px;
+            width: 80%;
+            padding: 1px 0px;
+            display: flex;
+            
+            .container_footer_blockLeft_phone_blockPhone{
+                width: 23px;
+                height: 18px;
+            }
+            .container_footer_blockLeft_phone_blockText{
+                width: 100%;
+                margin-left: 10px;
+                font-size: 16px;
+                color: white;
+                font-family: 'Open Sans', sans-serif;
+
+            }
+        }
+    }
+
+    //BLOCK CENTRO
+    .container_footer_blockCenter{
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 130px;
+        .container_footer_blockCenter_blockEnlaces{
+            width: 200px;
+            padding: 5px 0px;
+           
+            .container_footer_blockCenter_blockEnlaces_ul{
+                width: 100%;
+                padding: 10px 0px;
+                list-style: none;
+                
+                .container_footer_blockCenter_blockEnlaces_ul_li{
+                    width: 100%;
+                    margin: 1px 0px;
+                    padding: 10px;
+                    .footer_li{
+                        text-decoration: none;
+                        color: $Light_Gray;
+                    }
+                    .footer_li:hover{
+                        color: $Light_Grayish_Blue;
+                    }
+        
+                }
+                
+            }
+            
+        }
+       
+    }
+
+    //BLOCK DERECHO
+    .container_footer_blockRight{
+        width: 130px;
+        margin-top: 30px;
+        .container_footer_blockRight_blockRedes{
+            width:100%;
+            padding: 5px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .container_footer_blockRight_blockRedes_box{
+                width: 30px;
+                height: 30px;
+                border: 1px solid white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s all;
+                .iconRedes{
+                    transition: 0.5s all;
+                    color: $Light_Grayish_Blue;
+                }
+            }
+            .container_footer_blockRight_blockRedes_box:hover{
+                cursor: pointer;
+                .iconRedes{
+                    color: $Bright_Blue;
+                    
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+/********************(min-width:320px) and (max-width:423px){*******************************************/
+@media (min-width:320px) and (max-width:423px){
+    .container_footer{
+        width: 100%;
+        padding: 100px 50px;
+        background: $Very_Dark_Blue;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        //BLOCK IZQUIERDA
+        .container_footer_blockLeft{
+            width: 280px;
+            padding: 10px 0px;
+            .container_footer_blockLeft_logo{
+                width: 160px;
+                height: 50px;
+                margin-bottom: 30px;
+            }
+    
+            .container_footer_blockLeft_phone{
+                margin-top: 15px;
+                width: 80%;
+                padding: 1px 0px;
+                display: flex;
+                
+                .container_footer_blockLeft_phone_blockPhone{
+                    width: 23px;
+                    height: 18px;
+                }
+                .container_footer_blockLeft_phone_blockText{
+                    width: 100%;
+                    margin-left: 10px;
+                    font-size: 16px;
+                    color: white;
+                    font-family: 'Open Sans', sans-serif;
+    
+                }
+            }
+        }
+    
+        //BLOCK CENTRO
+        .container_footer_blockCenter{
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 30px;
+            .container_footer_blockCenter_blockEnlaces{
+                width: 200px;
+                padding: 5px 0px;
+               
+                .container_footer_blockCenter_blockEnlaces_ul{
+                    width: 100%;
+                    padding: 10px 0px;
+                    list-style: none;
+                    
+                    .container_footer_blockCenter_blockEnlaces_ul_li{
+                        width: 100%;
+                        margin: 1px 0px;
+                        padding: 10px;
+                        .footer_li{
+                            text-decoration: none;
+                            color: $Light_Gray;
+                        }
+                        .footer_li:hover{
+                            color: $Light_Grayish_Blue;
+                        }
+            
+                    }
+                    
+                }
+                
+            }
+           
+        }
+    
+        //BLOCK DERECHO
+        .container_footer_blockRight{
+            width: 130px;
+            margin: 30px auto;
+            .container_footer_blockRight_blockRedes{
+                width:100%;
+                padding: 5px 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                .container_footer_blockRight_blockRedes_box{
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.5s all;
+                    .iconRedes{
+                        transition: 0.5s all;
+                        color: $Light_Grayish_Blue;
+                    }
+                }
+                .container_footer_blockRight_blockRedes_box:hover{
+                    cursor: pointer;
+                    .iconRedes{
+                        color: $Bright_Blue;
+                        
+                    }
+                }
+            }
+    
+        }
+    }
+}
