@@ -45,7 +45,15 @@ container_sectionThree_blockRight
             outline: none;
             transition: 0.2s all;
         }
-       
+        .container_sectionThree_blockRight_label{
+            margin-top: 10px;
+            color:$Light_Grayish_Blue;
+            display: none;
+        }
+        .activar_label_JS{
+            display: block;
+        }
+
         .btnStarted{
             margin-top: 10px;
             width: 50%;
@@ -54,7 +62,11 @@ container_sectionThree_blockRight
             background: $Bright_Blue;
             color: $Light_Grayish_Blue;
             transition: 0.5s all;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+        
         .btnStarted:hover{
             background: $Bright_Blue_claro;
             cursor: pointer;

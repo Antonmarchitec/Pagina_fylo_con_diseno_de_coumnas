@@ -159,7 +159,7 @@ container_sectionOne_blockRight
   color: rgb(240, 89, 89);
   display: none;
 }
-.container_sectionOne .container_sectionOne_blockleft .container_sectionOne_form .container_sectionOne_form_p_JS {
+.container_sectionOne .container_sectionOne_blockleft .container_sectionOne_form .activar_label_JS {
   display: block;
 }
 .container_sectionOne .container_sectionOne_blockleft .container_sectionOne_form .btn {
@@ -459,6 +459,14 @@ container_sectionThree_blockRight
   outline: none;
   transition: 0.2s all;
 }
+.container_sectionThree .container_sectionThree_blockRight .container_sectionThree_blockRight_label {
+  margin-top: 10px;
+  color: hsl(240deg, 75%, 98%);
+  display: none;
+}
+.container_sectionThree .container_sectionThree_blockRight .activar_label_JS {
+  display: block;
+}
 .container_sectionThree .container_sectionThree_blockRight .btnStarted {
   margin-top: 10px;
   width: 50%;
@@ -467,6 +475,9 @@ container_sectionThree_blockRight
   background: hsl(224deg, 93%, 58%);
   color: hsl(240deg, 75%, 98%);
   transition: 0.5s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container_sectionThree .container_sectionThree_blockRight .btnStarted:hover {
   background: hsl(224deg, 97%, 76%);
