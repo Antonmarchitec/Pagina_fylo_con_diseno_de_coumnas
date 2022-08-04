@@ -139,12 +139,28 @@ container_sectionOne_blockRight
   margin-top: 20px;
   width: 400px;
   display: flex;
+  position: relative;
 }
 .container_sectionOne .container_sectionOne_blockleft .container_sectionOne_form .input {
   width: 600px;
   padding: 10px;
   border: none;
   border: 2px solid hsl(0deg, 0%, 75%);
+  outline: none;
+  transition: 0.2s all;
+}
+.container_sectionOne .container_sectionOne_blockleft .container_sectionOne_form .input:focus {
+  border: 2px solid hsl(224deg, 97%, 76%);
+}
+.container_sectionOne .container_sectionOne_blockleft .container_sectionOne_form .container_sectionOne_form_p {
+  position: absolute;
+  left: 5px;
+  bottom: -25px;
+  color: rgb(240, 89, 89);
+  display: none;
+}
+.container_sectionOne .container_sectionOne_blockleft .container_sectionOne_form .container_sectionOne_form_p_JS {
+  display: block;
 }
 .container_sectionOne .container_sectionOne_blockleft .container_sectionOne_form .btn {
   width: 300px;
@@ -153,6 +169,9 @@ container_sectionOne_blockRight
   background: hsl(224deg, 93%, 58%);
   color: hsl(240deg, 75%, 98%);
   transition: 0.5s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container_sectionOne .container_sectionOne_blockleft .container_sectionOne_form .btn:hover {
   background: hsl(224deg, 89%, 65%);
@@ -436,13 +455,14 @@ container_sectionThree_blockRight
 }
 .container_sectionThree .container_sectionThree_blockRight .inputTree {
   width: 100%;
-  padding: 10px;
-  border: none;
+  padding: 15px;
+  outline: none;
+  transition: 0.2s all;
 }
 .container_sectionThree .container_sectionThree_blockRight .btnStarted {
   margin-top: 10px;
   width: 50%;
-  padding: 10px 0px;
+  padding: 15px 0px;
   border: none;
   background: hsl(224deg, 93%, 58%);
   color: hsl(240deg, 75%, 98%);
@@ -478,8 +498,9 @@ container_sectionThree_blockRight
     /**/
     width: 80%;
     margin: auto;
-    padding: 10px;
+    padding: 15px;
     border: none;
+    outline: none;
   }
   .container_sectionThree .container_sectionThree_blockRight .btnStarted {
     /**/

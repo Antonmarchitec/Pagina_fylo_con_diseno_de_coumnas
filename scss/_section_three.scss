@@ -41,13 +41,15 @@ container_sectionThree_blockRight
         padding: 10px 0px;
         .inputTree{
             width: 100%;
-            padding: 10px;
-            border: none;
+            padding: 15px;  
+            outline: none;
+            transition: 0.2s all;
         }
+       
         .btnStarted{
             margin-top: 10px;
             width: 50%;
-            padding: 10px 0px;
+            padding: 15px 0px;
             border: none;
             background: $Bright_Blue;
             color: $Light_Grayish_Blue;
@@ -92,8 +94,9 @@ container_sectionThree_blockRight
                 /**/
                 width: 80%;
                 margin: auto;
-                padding: 10px;
+                padding: 15px;
                 border: none;
+                outline: none;
             }
             .btnStarted{
             

@@ -40,11 +40,30 @@ container_sectionOne_blockRight
             margin-top: 20px;
             width: 400px;
             display: flex;
+           
+            position: relative;
             .input{
                 width: 600px;
                 padding: 10px;
                 border: none;
                 border: 2px solid $Light_Gray;
+                outline: none;
+                transition: 0.2s all;
+                
+            }
+            .input:focus{
+                border: 2px solid $Bright_Blue_claro;
+            }
+
+            .container_sectionOne_form_p{
+                position: absolute;
+                left: 5px;
+                bottom:-25px ;
+                color: rgb(240, 89, 89);
+                display: none;
+            }
+            .container_sectionOne_form_p_JS{
+                display: block;
             }
             .btn{
                 width: 300px;
@@ -53,6 +72,9 @@ container_sectionOne_blockRight
                 background: $Bright_Blue;
                 color: $Light_Grayish_Blue;
                 transition: 0.5s all;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .btn:hover{
                 background: hsl(224, 89%, 65%);
