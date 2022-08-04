@@ -10,14 +10,6 @@ body {
   font-weight: 400;
 }
 
-/*
-GRID_CONTAINER
-GRID_HEADER
-GRID_SECTION_ONE
-GIRD_SECTION_TWO
-GRID_SECTION_THREE
-GRID_FOOTER
-*/
 .GRID_CONTAINER {
   width: 100%;
   max-width: 1440px;
@@ -43,14 +35,6 @@ GRID_FOOTER
   grid-area: GRID_FOOTER;
 }
 
-/*
-container_header
-container_header_logo
-container_header_enlaces
-container_header_enlaces_ul
-container_header_enlaces_ul_li
-header_a
-*/
 .container_header {
   width: 100%;
   padding: 30px 50px;
@@ -100,17 +84,6 @@ header_a
     font-size: 12px;
   }
 }
-/*
-container_sectionOne
-container_sectionOne_blockleft
-container_sectionOne_title
-container_sectionOne_parrafo
-container_sectionOne_form
-input
-btn
-
-container_sectionOne_blockRight
-*/
 .container_sectionOne {
   width: 100%;
   padding: 100px 50px;
@@ -231,19 +204,6 @@ container_sectionOne_blockRight
     height: 350px;
   }
 }
-/*
-container_sectionTwo
-    container_sectionTwo_blockLeft
-    container_sectionTwo_blockLeft_title
-    container_sectionTwo_blockLeft_parrafo
-    container_sectionTwo_blockLeft_target
-        container_sectionTwo_blockLeft_target_comillas
-        container_sectionTwo_blockLeft_target_parrafo
-        container_sectionTwo_blockLeft_target_avatar
-        container_sectionTwo_blockLeft_target_avatar_img
-        container_sectionTwo_blockLeft_target_avatar_section
-    container_sectionTwo_blockRight
-*/
 .container_sectionTwo {
   width: 100%;
   padding: 10px 0px;
@@ -417,15 +377,6 @@ container_sectionTwo
     background: hsl(240deg, 73%, 97%);
   }
 }
-/*
-container_sectionThree
-container_sectionThree_blockLeft
-    container_sectionThree_blockLeft_title
-    container_sectionThree_blockLeft_parrafo
-container_sectionThree_blockRight
-    inputTree
-    btnStarted
-*/
 .container_sectionThree {
   width: 100%;
   padding: 100px 50px;
@@ -523,30 +474,6 @@ container_sectionThree_blockRight
     cursor: pointer;
   }
 }
-/*
-container_footer
-container_footer_blockLeft
-    container_footer_blockLeft_logo
-    container_footer_blockLeft_phone
-    container_footer_blockLeft_phone_blockPhone
-    container_footer_blockLeft_phone_blockText
-    container_footer_blockLeft_phone
-    container_footer_blockLeft_phone_blockPhone
-    container_footer_blockLeft_phone_blockText
-
-
-container_footer_blockCenter
-    container_footer_blockCenter_blockEnlaces
-    container_footer_blockCenter_blockEnlaces_ul
-    container_footer_blockCenter_blockEnlaces_ul_li
-        footer_li
-
-
-container_footer_blockRight
-    container_footer_blockRight_blockRedes
-        container_footer_blockRight_blockRedes_box
-        iconRedes
-*/
 .container_footer {
   width: 100%;
   padding: 100px 50px;
